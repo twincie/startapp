@@ -50,7 +50,7 @@ public class JWTServiceImpl implements JWTService {
     }
 
     private Claims extractAllClaims(String token){
-        return Jwts.parserBuilder().setSigningKey(getSigninKey()).build().parseClaimsJwt(token).getBody();
+        return Jwts.parserBuilder().setSigningKey(getSigninKey()).build().parseClaimsJws(token).getBody();
     }
 
     public boolean isTokenValid(String token, UserDetails userDetails){

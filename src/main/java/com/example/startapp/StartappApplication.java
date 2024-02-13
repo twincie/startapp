@@ -12,6 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = "com.example.startup.repository")
+//@ComponentScan({"com.repositories"})
 public class StartappApplication implements CommandLineRunner {
 
 	@Autowired
